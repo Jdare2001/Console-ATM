@@ -1,0 +1,14 @@
+/Users/jaydendare/Documents/C#/Console ATM/ATMConsole/obj/Debug/net7.0/ATMConsole.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jaydendare/Documents/C#/Console ATM/ATMConsole/obj/Debug/net7.0/ATMConsole.AssemblyInfoInputs.cache
+/Users/jaydendare/Documents/C#/Console ATM/ATMConsole/obj/Debug/net7.0/ATMConsole.AssemblyInfo.cs
+/Users/jaydendare/Documents/C#/Console ATM/ATMConsole/obj/Debug/net7.0/ATMConsole.csproj.CoreCompileInputs.cache
+/Users/jaydendare/Documents/C#/Console ATM/ATMConsole/bin/Debug/net7.0/ATMConsole
+/Users/jaydendare/Documents/C#/Console ATM/ATMConsole/bin/Debug/net7.0/ATMConsole.deps.json
+/Users/jaydendare/Documents/C#/Console ATM/ATMConsole/bin/Debug/net7.0/ATMConsole.runtimeconfig.json
+/Users/jaydendare/Documents/C#/Console ATM/ATMConsole/bin/Debug/net7.0/ATMConsole.dll
+/Users/jaydendare/Documents/C#/Console ATM/ATMConsole/bin/Debug/net7.0/ATMConsole.pdb
+/Users/jaydendare/Documents/C#/Console ATM/ATMConsole/obj/Debug/net7.0/ATMConsole.dll
+/Users/jaydendare/Documents/C#/Console ATM/ATMConsole/obj/Debug/net7.0/refint/ATMConsole.dll
+/Users/jaydendare/Documents/C#/Console ATM/ATMConsole/obj/Debug/net7.0/ATMConsole.pdb
+/Users/jaydendare/Documents/C#/Console ATM/ATMConsole/obj/Debug/net7.0/ATMConsole.genruntimeconfig.cache
+/Users/jaydendare/Documents/C#/Console ATM/ATMConsole/obj/Debug/net7.0/ref/ATMConsole.dll
