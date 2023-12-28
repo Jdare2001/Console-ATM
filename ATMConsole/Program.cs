@@ -41,6 +41,7 @@ public class ATMConsoleApp{
         String name;
         float balance;
         int pin;
+        //loops around when an option is agreed on 
         while(!optionChosen){
             Console.WriteLine("please input your name");
             name = Console.ReadLine().ToString();
