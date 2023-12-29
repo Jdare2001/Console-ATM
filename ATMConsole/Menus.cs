@@ -1,4 +1,7 @@
+using System.Runtime.CompilerServices;
+
 public class theMenus{
+    public AccountList accountList = new AccountList();
     public static void Menu(){
     bool optionchosen = false;
     while(!optionchosen){
@@ -28,9 +31,9 @@ public class theMenus{
     }
     public static void CreateAccount(){
         bool optionChosen = false; 
-        String name;
-        float balance;
-        int pin;
+        String name = "NOT SELECTED";
+        float balance = 0.00f;
+        int pin = 0;
         //loops around when an option is agreed on 
         while(!optionChosen){
             Console.WriteLine("please input your name");
@@ -73,5 +76,17 @@ public class theMenus{
                 Console.WriteLine("please try again");
             }
         }
+        Account theAccount = new Account(name,pin,balance);
+        if(isAccountAvailable(theAccount)){
+
+        }
+    }
+
+    private static bool isAccountAvailable(Account account){
+         
+        
+        
+        return false;
+
     }
 }
