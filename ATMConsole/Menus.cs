@@ -1,7 +1,7 @@
 using System.Runtime.CompilerServices;
 
 public class theMenus{
-    public AccountList accountList = new AccountList();
+    private static List<Account> accountList = new List<Account>();
     public static void Menu(){
     bool optionchosen = false;
     while(!optionchosen){
@@ -15,7 +15,7 @@ public class theMenus{
             case "1":
                 break;
             case "2":
-            CreateAccount();
+            CreateAccount(accountList);
                 break;
             case "3":
                 Environment.Exit(0);
@@ -29,7 +29,7 @@ public class theMenus{
     }
 
     }
-    public static void CreateAccount(){
+    public static void CreateAccount(List<Account> accountList){
         bool optionChosen = false; 
         String name = "NOT SELECTED";
         float balance = 0.00f;
@@ -77,16 +77,17 @@ public class theMenus{
             }
         }
         Account theAccount = new Account(name,pin,balance);
-        if(isAccountAvailable(theAccount)){
-
+        if(!accountList.Contains(theAccount)){
+            accountList.Add(theAccount);
+        }
+        Console.WriteLine("Account Created");
         }
     }
 
-    private static bool isAccountAvailable(Account account){
+    
          
         
         
-        return false;
+        
 
-    }
-}
+    
