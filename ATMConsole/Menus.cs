@@ -1,4 +1,5 @@
 using System.Runtime.CompilerServices;
+using System.Security;
 
 public class theMenus{
     private static List<Account> accountList = new List<Account>();
@@ -29,7 +30,7 @@ public class theMenus{
     }
 
     }
-    public static void CreateAccount(List<Account> accountList){
+    public static void CreateAccount(List<Account> accounts){
         bool optionChosen = false; 
         String name = "NOT SELECTED";
         float balance = 0.00f;
@@ -37,7 +38,7 @@ public class theMenus{
         //loops around when an option is agreed on 
         while(!optionChosen){
             Console.WriteLine("please input your name");
-            name = Console.ReadLine().ToString();
+            name = Console.ReadLine().ToString().ToUpper();
             Console.WriteLine("you inputted "+ name +" is this correct");
             Console.WriteLine("Y/N");
             string ans = Console.ReadLine().ToString().ToUpper();
@@ -77,13 +78,20 @@ public class theMenus{
             }
         }
         Account theAccount = new Account(name,pin,balance);
-        if(!accountList.Contains(theAccount)){
-            accountList.Add(theAccount);
+        if(!accounts.Contains(theAccount)){
+            accounts.Add(theAccount);
         }
         Console.WriteLine("Account Created");
-        }
     }
 
+    public static void CheckAccount(List<Account> accounts){
+
+    }
+
+
+}
+
+    
     
          
         
