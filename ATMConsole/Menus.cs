@@ -35,7 +35,7 @@ public class theMenus{
         String name = "NOT SELECTED";
         float balance = 0.00f;
         int pin = 0;
-        //loops around when an option is agreed on 
+        //loops around when an option is  not agreed on 
         while(!optionChosen){
             Console.WriteLine("please input your name");
             name = Console.ReadLine().ToString().ToUpper();
@@ -85,6 +85,27 @@ public class theMenus{
     }
 
     public static void CheckAccount(List<Account> accounts){
+        String name = "NOT SELECTED";
+        int pin = 0;
+        
+        Console.WriteLine("please insert your pin");
+        pin = int.Parse(Console.ReadLine());
+        Console.WriteLine("Please input your name");
+        name = Console.ReadLine().ToString().ToUpper();
+        int index = accounts.FindIndex(f => f.getName() == name && f.checkPin(pin));
+        if(index >= 0){
+            bool optionChosen = false;
+            while(!optionChosen){
+                Console.WriteLine("Hello "+name+" What would you like to do?");
+                Console.WriteLine("1 - Check balance");
+                Console.WriteLine("2 - Withdraw money");
+                Console.WriteLine("3 - Deposit money");
+                Console.WriteLine("4 - Quit");
+            }
+        }
+        else{
+            Console.WriteLine("Invalid login details please try again");
+        }
 
     }
 

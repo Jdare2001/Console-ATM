@@ -10,6 +10,13 @@ public class Account{
         this.pin = pin;
         this.balance = balance;
     }
+    public bool checkPin(int enteredPin){
+        bool outcome = false;
+        if(enteredPin == pin){
+            outcome = true;
+        }
+        return outcome;
+    }
 
     public String getName(){
         return this.name;
