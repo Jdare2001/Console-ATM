@@ -107,7 +107,7 @@ public class theMenus{
                         Console.WriteLine("Your balance is £"+accounts[index].getBalance());
                         break;
                     case "2":
-                        
+                        WithdrawMoney(accounts,index);
                         break;
                     case "3":
                         Console.WriteLine("How much money would you like to add");
@@ -129,6 +129,18 @@ public class theMenus{
             Console.WriteLine("Invalid login details please try again");
         }
 
+    }
+    private static void WithdrawMoney(List<Account> accounts,int index){
+        Console.WriteLine("How much money would you like to withdraw");
+        int withdrawAmount = int.Parse(Console.ReadLine());
+        if(accounts[index].getBalance() - withdrawAmount >= 0){
+            accounts[index].updateBalance(-withdrawAmount);
+            Console.WriteLine("You have withdrawn £"+ withdrawAmount);
+            Console.WriteLine("Have a nice day");
+        }
+        else{
+            Console.WriteLine("Insufficent funds");
+        }
     }
 
 
