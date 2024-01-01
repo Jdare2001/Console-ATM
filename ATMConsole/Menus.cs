@@ -14,9 +14,10 @@ public class theMenus{
        
         switch(Console.ReadLine().ToString()){
             case "1":
+                CheckAccount(accountList);
                 break;
             case "2":
-            CreateAccount(accountList);
+                CreateAccount(accountList);
                 break;
             case "3":
                 Environment.Exit(0);
@@ -101,6 +102,27 @@ public class theMenus{
                 Console.WriteLine("2 - Withdraw money");
                 Console.WriteLine("3 - Deposit money");
                 Console.WriteLine("4 - Quit");
+                switch(Console.ReadLine().ToString()){
+                    case "1":
+                        Console.WriteLine("Your balance is £"+accounts[index].getBalance());
+                        break;
+                    case "2":
+                        
+                        break;
+                    case "3":
+                        Console.WriteLine("How much money would you like to add");
+                        int depositAmount = int.Parse(Console.ReadLine());
+                        accounts[index].updateBalance(depositAmount);
+                        Console.WriteLine("you have added "+ depositAmount +" to your account you balance is now £"+ accounts[index].getBalance());
+                        break;
+                    case "4":
+                        optionChosen = true;
+                        break;
+                    default:
+                        Console.WriteLine("invalid input please try again");
+                        break;
+
+        }
             }
         }
         else{
